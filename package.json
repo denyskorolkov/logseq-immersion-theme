@@ -1,6 +1,6 @@
 {
   "name": "logseq-immersion-theme",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "Custom Logseq Theme for Immersion in Mind",
   "main": "custom.css",
   "scripts": {
