@@ -109,6 +109,7 @@ a.tag:hover {
 
 html[data-theme=light] .form-checkbox, .form-radio {
   background-color: var(--ls-primary-background-color);
+  margin-left: 1px;
 }
 
 .white-theme, html[data-theme=light] {
