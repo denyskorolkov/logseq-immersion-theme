@@ -6,7 +6,7 @@ This is a [Logseq](https://logseq.com) theme focusing on immersion in mind.
 
 ## Demo
 
-TODO: Add a link to demo
+There is the latest theme look: https://denyskorolkov.github.io/logseq-immersion-theme/#/page/immersion%20theme%20demo%20page
 
 ## How to use
 
