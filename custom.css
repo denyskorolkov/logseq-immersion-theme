@@ -21,7 +21,7 @@
 /* Common */
 
 :root {
-	font-family: Segoe UI,Roboto,sans-serif;
+  font-family: Segoe UI,Roboto,sans-serif;
   font-size: var(--ls-page-text-size);
   font-weight: 400;
   letter-spacing: .002em;
