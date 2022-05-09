@@ -10,7 +10,7 @@ There is the latest theme look: https://denyskorolkov.github.io/logseq-immersion
 
 ## How to use
 
-Use jsDelivr CDN: https://cdn.jsdelivr.net/gh/denyskorolkov/logseq-immersion-theme/custom.css.
+Use jsDelivr CDN: https://cdn.jsdelivr.net/gh/denyskorolkov/logseq-immersion-theme@1/custom.css.
 
 ### Setting configuration file
 
@@ -22,7 +22,7 @@ Specify `:custom-css-url` in `logseq/config.edn`
  ;; You may find a list of awesome logseq themes here:
  ;; https://github.com/logseq/awesome-logseq#css-themes
  ;; Example:
-:custom-css-url "@import url('https://cdn.jsdelivr.net/gh/denyskorolkov/logseq-immersion-theme/custom.css');"
+:custom-css-url "@import url('https://cdn.jsdelivr.net/gh/denyskorolkov/logseq-immersion-theme@1/custom.css');"
 ```
 
 ### Custom.css
@@ -30,7 +30,7 @@ Specify `:custom-css-url` in `logseq/config.edn`
 Add the next line to `custom.css`:
 
 ```css
-@import url('https://cdn.jsdelivr.net/gh/denyskorolkov/logseq-immersion-theme/custom.css');
+@import url('https://cdn.jsdelivr.net/gh/denyskorolkov/logseq-immersion-theme@1/custom.css');
 ```
 
 ### Plugin
