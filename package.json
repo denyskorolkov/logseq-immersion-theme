@@ -7,6 +7,18 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "semantic-release": "semantic-release"
   },
+  "logseq": {
+    "themes": [
+      {
+        "name": "Immersion",
+        "url": "./custom.css",
+        "description": "A clean theme for immersion into Logseq"
+      }
+    ],
+    "id": "immersion-theme",
+    "title": "Immersion theme",
+    "icon": "immersion.png"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/denyskorolkov/logseq-immersion-theme.git"
