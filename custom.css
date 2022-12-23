@@ -393,6 +393,10 @@ html[data-theme='light'] .cp__header i {
   color: var(--ls-content-link-text-color, #045591);
 }
 
+.cp__sidebar-left-layout {
+  background: transparent;
+}
+
 .cp__sidebar-left-layout.is-open {
   background: radial-gradient(circle, #333, black);
 }
