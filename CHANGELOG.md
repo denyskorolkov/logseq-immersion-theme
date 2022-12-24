@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/denyskorolkov/logseq-immersion-theme/compare/v1.0.1...v1.0.2) (2022-12-23)
+
+
+### Bug Fixes
+
+* **css:** Fix left sidebar background ([eaa1309](https://github.com/denyskorolkov/logseq-immersion-theme/commit/eaa130900192e92408a40deb4c660d11ef05fbf7))
+
 ## [1.0.1](https://github.com/denyskorolkov/logseq-immersion-theme/compare/v1.0.0...v1.0.1) (2022-05-09)
 
 
