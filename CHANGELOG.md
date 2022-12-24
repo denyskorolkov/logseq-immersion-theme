@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/denyskorolkov/logseq-immersion-theme/compare/v1.2.1...v1.2.2) (2022-12-24)
+
+
+### Bug Fixes
+
+* **selected:** Fix selected item ([35dc6b5](https://github.com/denyskorolkov/logseq-immersion-theme/commit/35dc6b5a32194af4433bbd6f47737434c5c3a9be))
+
 ## [1.2.1](https://github.com/denyskorolkov/logseq-immersion-theme/compare/v1.2.0...v1.2.1) (2022-12-24)
 
 
