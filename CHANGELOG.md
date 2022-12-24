@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/denyskorolkov/logseq-immersion-theme/compare/v1.1.0...v1.2.0) (2022-12-24)
+
+
+### Features
+
+* **menu:** Color menu items with fixes ([bc7e941](https://github.com/denyskorolkov/logseq-immersion-theme/commit/bc7e941d40e724bc72300894864cba6b837fef10))
+
 # [1.1.0](https://github.com/denyskorolkov/logseq-immersion-theme/compare/v1.0.2...v1.1.0) (2022-12-24)
 
 
