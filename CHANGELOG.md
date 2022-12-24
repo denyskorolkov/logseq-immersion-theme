@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/denyskorolkov/logseq-immersion-theme/compare/v1.2.0...v1.2.1) (2022-12-24)
+
+
+### Bug Fixes
+
+* **buttons:** Fix buttons styels ([8be73bf](https://github.com/denyskorolkov/logseq-immersion-theme/commit/8be73bf5371675c0f9c0e9f0fc647a5f9bb47695))
+
 # [1.2.0](https://github.com/denyskorolkov/logseq-immersion-theme/compare/v1.1.0...v1.2.0) (2022-12-24)
 
 
