@@ -97,6 +97,140 @@ a.tag:hover {
   white-space: normal;
 }
 
+/* Sidebar */
+
+:root {
+  --ls-sidebar-text-color: #a4b5b6;
+  --ls-sidebar-link-text-color: rgb(138, 187, 187);
+  --ls-sidebar-quaternary-background-color: #094b5a;
+}
+
+.white-theme,
+html[data-theme='light'] {
+  --ls-content-link-text-color: rgb(62 131 131);
+}
+
+[aria-label='Sidebar'] {
+  padding: 0;
+}
+
+.left-sidebar-inner a.item {
+  margin: 0 4px;
+  box-sizing: border-box;
+}
+
+.left-sidebar-inner .nav-content-item > .header:hover,
+.left-sidebar-inner .nav-content-item > .bd ul a:hover,
+.left-sidebar-inner a.item:hover {
+  background-color: var(--ls-sidebar-quaternary-background-color);
+}
+
+.left-sidebar-inner a.item,
+.left-sidebar-inner .nav-content-item > .header a {
+  color: var(--ls-sidebar-link-text-color, #045591);
+}
+
+.left-sidebar-inner .nav-content-item > .bd ul a {
+  color: var(--ls-sidebar-text-color);
+}
+
+.cp__sidebar-left-layout {
+  background: transparent;
+  bottom: 0;
+}
+
+.cp__sidebar-left-layout.is-open .left-sidebar-inner {
+  background: radial-gradient(circle, #333, black);
+}
+
+.left-sidebar-inner .new-page,
+.left-sidebar-inner {
+  background: none;
+}
+
+.cp__right-sidebar .sidebar-item .close:hover {
+  transform: scale(0.8);
+}
+
+.cp__right-sidebar .sidebar-item .close {
+  transform: scale(0.8);
+}
+
+.left-sidebar-inner > .wrap {
+  height: 100%;
+}
+
+.left-sidebar-inner .nav-content-item .bd ul a:hover,
+.left-sidebar-inner .nav-content-item .header:hover {
+  background-color: var(--color-gray-700);
+}
+
+.nav-content-item .rounded-md {
+  opacity: 0.4;
+}
+
+.is-expand.nav-content-item .rounded-md {
+  opacity: 1;
+}
+
+.is-expand.nav-content-item .rounded-md,
+.cp__sidebar-left-layout a {
+  color: var(--color-gray-300);
+}
+
+.ls-icon-star {
+  color: darkgoldenrod;
+}
+
+.ls-icon-history {
+  color: darkgreen;
+}
+
+html[data-theme='light'] .cp__header a,
+html[data-theme='light'] a.right-sidebar-button,
+html[data-theme='light'] .cp__header a,
+html[data-theme='light'] .cp__header button,
+html[data-theme='light'] .cp__right-sidebar-topbar button {
+  color: var(--color-gray-500);
+}
+
+html[data-theme='light'] .left-sidebar-inner .is-expand a.item.active,
+html[data-theme='light']
+  .left-sidebar-inner
+  .is-expand
+  .nav-content-item
+  > .header
+  a.active,
+html[data-theme='light'] .dropdown-wrapper a {
+  color: var(--color-gray-400);
+}
+
+html[data-theme='dark'] .left-sidebar-inner .is-expand a.item.active,
+html[data-theme='dark']
+  .left-sidebar-inner
+  .is-expand
+  .nav-content-item
+  > .header
+  a.active,
+html[data-theme='dark'] .ui__dropdown-trigger a {
+  color: var(--ls-header-button-background);
+}
+
+html[data-theme='light'] .left-sidebar-inner .dropdown-wrapper .menu-link {
+  opacity: 1;
+}
+
+html[data-theme='light'] .left-sidebar-inner a.item.active,
+html[data-theme='light'] .left-sidebar-inner a.item:active,
+html[data-theme='dark'] .left-sidebar-inner a.item.active,
+html[data-theme='dark'] .left-sidebar-inner a.item:active {
+  background-color: var(--ls-quaternary-background-color);
+}
+
+.left-sidebar-inner .create {
+  background-image: unset;
+}
+
 /* Header */
 
 .cp__header a.button {
@@ -359,138 +493,6 @@ html[data-theme='dark'] {
 
 .inline span[data-ref^='@'] .bracket {
   display: none;
-}
-
-/* Sidebar */
-
-:root {
-  --ls-sidebar-text-color: #a4b5b6;
-  --ls-sidebar-link-text-color: rgb(138, 187, 187);
-  --ls-sidebar-quaternary-background-color: #094b5a;
-}
-
-.white-theme,
-html[data-theme='light'] {
-  --ls-content-link-text-color: rgb(62 131 131);
-}
-
-[aria-label='Sidebar'] {
-  padding: 0;
-}
-
-.left-sidebar-inner a.item {
-  margin: 0 4px;
-  box-sizing: border-box;
-}
-
-.left-sidebar-inner .nav-content-item > .header:hover,
-.left-sidebar-inner .nav-content-item > .bd ul a:hover,
-.left-sidebar-inner a.item:hover {
-  background-color: var(--ls-sidebar-quaternary-background-color);
-}
-
-.left-sidebar-inner a.item,
-.left-sidebar-inner .nav-content-item > .header a {
-  color: var(--ls-sidebar-link-text-color, #045591);
-}
-
-.left-sidebar-inner .nav-content-item > .bd ul a {
-  color: var(--ls-sidebar-text-color);
-}
-
-.cp__sidebar-left-layout {
-  background: transparent;
-  bottom: 0;
-}
-
-.cp__sidebar-left-layout.is-open .left-sidebar-inner {
-  background: radial-gradient(circle, #333, black);
-}
-
-.left-sidebar-inner .new-page,
-.left-sidebar-inner {
-  background: none;
-}
-
-.cp__right-sidebar .sidebar-item .close:hover {
-  transform: scale(0.8);
-}
-
-.cp__right-sidebar .sidebar-item .close {
-  transform: scale(0.8);
-}
-
-.left-sidebar-inner > .wrap {
-  height: 100%;
-}
-
-.left-sidebar-inner .nav-content-item .bd ul a:hover,
-.left-sidebar-inner .nav-content-item .header:hover {
-  background-color: var(--color-gray-700);
-}
-
-.nav-content-item .rounded-md {
-  opacity: 0.4;
-}
-
-.is-expand.nav-content-item .rounded-md {
-  opacity: 1;
-}
-
-.is-expand.nav-content-item .rounded-md,
-.cp__sidebar-left-layout a {
-  color: var(--color-gray-300);
-}
-
-.ls-icon-star {
-  color: darkgoldenrod;
-}
-
-.ls-icon-history {
-  color: darkgreen;
-}
-
-html[data-theme='light'] .cp__header a,
-html[data-theme='light'] a.right-sidebar-button,
-html[data-theme='light'] .cp__header a,
-html[data-theme='light'] .cp__header button,
-html[data-theme='light'] .cp__right-sidebar-topbar button {
-  color: var(--color-gray-500);
-}
-
-html[data-theme='light'] .left-sidebar-inner .is-expand a.item.active,
-html[data-theme='light']
-  .left-sidebar-inner
-  .is-expand
-  .nav-content-item
-  > .header
-  a.active,
-html[data-theme='light'] .dropdown-wrapper a {
-  color: var(--color-gray-400);
-}
-
-html[data-theme='dark'] .left-sidebar-inner .is-expand a.item.active,
-html[data-theme='dark']
-  .left-sidebar-inner
-  .is-expand
-  .nav-content-item
-  > .header
-  a.active,
-html[data-theme='dark'] .ui__dropdown-trigger a {
-  color: var(--ls-header-button-background);
-}
-
-html[data-theme='light'] .left-sidebar-inner .dropdown-wrapper .menu-link {
-  opacity: 1;
-}
-
-.left-sidebar-inner a.item.active,
-.left-sidebar-inner a.item:active {
-  background-color: var(--ls-sidebar-link-text-color, #045591);
-}
-
-.left-sidebar-inner .create {
-  background-image: unset;
 }
 
 /* Highlighted blocks */
