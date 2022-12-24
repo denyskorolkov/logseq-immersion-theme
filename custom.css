@@ -600,8 +600,31 @@ html[data-theme='dark'] {
   background-color: var(--color-gray-700);
 }
 
+.nav-content-item .rounded-md {
+  opacity: 0.4;
+}
+
+.is-expand.nav-content-item .rounded-md {
+  opacity: 1;
+}
+
+.is-expand.nav-content-item .rounded-md,
 .cp__sidebar-left-layout a {
   color: var(--color-gray-300);
+}
+
+.ls-icon-star {
+  color: darkgoldenrod;
+}
+
+.ls-icon-history {
+  color: darkgreen;
+}
+
+.left-sidebar-inner .is-expand a.item.active,
+.left-sidebar-inner .is-expand .nav-content-item > .header a.active,
+.ui__dropdown-trigger a {
+  color: var(--color-gray-700);
 }
 
 .left-sidebar-inner .create {
