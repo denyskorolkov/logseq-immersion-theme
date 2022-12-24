@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/denyskorolkov/logseq-immersion-theme/compare/v1.0.2...v1.1.0) (2022-12-24)
+
+
+### Features
+
+* Remove unused stuff ([7115359](https://github.com/denyskorolkov/logseq-immersion-theme/commit/711535972b5ec5260dbe48bd84a985b202070cb3))
+
 ## [1.0.2](https://github.com/denyskorolkov/logseq-immersion-theme/compare/v1.0.1...v1.0.2) (2022-12-23)
 
 
