@@ -104,6 +104,10 @@ a.tag:hover {
   margin: 0;
 }
 
+.l [data-tooltipped] .ui__icon {
+  color: var(--color-gray-400);
+}
+
 /* Journal */
 
 #journals > div:last-child a {
@@ -136,6 +140,7 @@ html[data-theme='dark'] {
   border: 1px solid var(--ls-page-checkbox-border-color);
   margin-top: 0 !important;
   margin-right: 0.1em !important;
+  background: var(--color-gray-300);
 }
 
 .form-checkbox:checked,
@@ -148,7 +153,7 @@ html[data-theme='dark'] {
   border: 1px solid var(--ls-page-checkbox-border-color);
 }
 
-.form-checkbox:checked {
+.white-theme .form-checkbox:checked {
   background: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='black' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M5.707 7.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4a1 1 0 0 0-1.414-1.414L7 8.586 5.707 7.293z'/%3e%3c/svg%3e");
 }
 
@@ -451,7 +456,6 @@ a.DOING,
   margin-left: 2px;
   border: 1px var(--ph-highlight-color-blue) solid;
   background-color: white;
-  color: var(--ph-highlight-color-blue);
   padding-bottom: 0;
   margin-right: 0.4em;
   transform: scale(0.8);
@@ -463,6 +467,7 @@ a.DOING,
 .dark-theme a.DOING,
 .dark-theme .task-status.waiting {
   border: none;
+  color: var(--color-purple-500);
 }
 
 .task-status.waiting {
@@ -527,11 +532,17 @@ a.NOW {
   position: relative;
   vertical-align: middle;
   margin-top: -2px;
+  margin-right: 0.5px !important;
 }
 
 [href='#/page/A']::before,
 [href='#/page/B']::before,
 [href='#/page/C']::before {
+  margin-top: -1px;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  font-size: 12px;
   visibility: visible;
 }
 
@@ -593,15 +604,6 @@ html[data-theme='dark'] {
   color: var(--color-gray-300);
 }
 
-.cp__sidebar-left-layout a:hover {
-  color: var(--color-gray-700);
-}
-
 .left-sidebar-inner .create {
   background-image: unset;
-}
-
-html[data-theme='light'] .cp__header a,
-html[data-theme='light'] a.right-sidebar-button {
-  color: var(--ls-content-link-text-color, #045591);
 }
