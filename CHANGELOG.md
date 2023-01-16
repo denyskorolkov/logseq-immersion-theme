@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/denyskorolkov/logseq-immersion-theme/compare/v1.2.2...v1.3.0) (2023-01-16)
+
+
+### Features
+
+* **css:** Style improvements ([260d167](https://github.com/denyskorolkov/logseq-immersion-theme/commit/260d16720aefe268653e6b018f77c694e089665f))
+
 ## [1.2.2](https://github.com/denyskorolkov/logseq-immersion-theme/compare/v1.2.1...v1.2.2) (2022-12-24)
 
 
