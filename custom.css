@@ -525,20 +525,12 @@ a.DOING,
   letter-spacing: initial;
   vertical-align: top;
   margin-left: 2px;
-  border: 1px var(--ph-highlight-color-blue) solid;
+  border: 1px green solid;
   background-color: white;
   padding-bottom: 0;
   margin-right: 0.4em;
   transform: scale(0.8);
-}
-
-.dark-theme a.LATER,
-.dark-theme a.NOW,
-.dark-theme a.TODO,
-.dark-theme a.DOING,
-.dark-theme .task-status.waiting {
-  border: none;
-  color: var(--color-purple-500);
+  color: green;
 }
 
 .task-status.waiting {
@@ -547,13 +539,14 @@ a.DOING,
 
 a.DOING,
 a.NOW {
-  border: 1px var(--priority-1-color) solid;
-  color: var(--priority-1-color);
+  border: 1px crimson solid;
+  color: crimson;
+  border-color: crimson;
 }
 
 .task-status.waiting {
-  border: 1px var(--ph-highlight-color-purple) solid;
-  color: var(--ph-highlight-color-purple);
+  border: 1px magenta solid;
+  color: magenta;
 }
 
 .timestamp::after,
@@ -570,13 +563,13 @@ a.NOW {
   margin-top: 3px;
 }
 
-[data-refs-self*='"waiting"'] .block-content-wrapper::after {
+/* [data-refs-self*='"waiting"'] .block-content-wrapper::after {
   content: '⏳';
-}
+} */
 
-.timestamp::after {
+/* .timestamp::after {
   content: '📆';
-}
+} */
 
 [data-refs-self*='"a"'] .bullet-container .bullet {
   background-color: var(--priority-1-color);
@@ -668,4 +661,77 @@ html[data-theme='dark'] {
 
 html[data-theme='light'] .toolbar-dots-btn ~ .dropdown-wrapper {
   color: var(--ls-header-button-background);
+}
+
+/* forest-green
+light-coral */
+
+/* Journal Queries */
+.journal-item .custom-query {
+  margin-top: 1rem !important;
+}
+
+.journal-item .custom-query .ls-block {
+  border-radius: 8px;
+  margin-bottom: 4px;
+}
+
+.light-theme
+  .journal-item
+  .custom-query
+  .blocks-container
+  > div:nth-child(odd)
+  .ls-block {
+  background: aliceblue;
+}
+
+.light-theme
+  .journal-item
+  .custom-query
+  .blocks-container
+  > div:nth-child(even)
+  .ls-block {
+  background: cornsilk;
+}
+
+.dark-theme
+  .journal-item
+  .custom-query
+  .blocks-container
+  > div:nth-child(odd)
+  .ls-block {
+  background: #295276;
+}
+
+.dark-theme
+  .journal-item
+  .custom-query
+  .blocks-container
+  > div:nth-child(even)
+  .ls-block {
+  background: #10452f;
+}
+
+.journal-item .custom-query .breadcrumb {
+  opacity: 0.4;
+  font-size: 80%;
+}
+
+#today-queries > div {
+  min-height: auto !important;
+}
+
+.inline,
+.uniline-block {
+  vertical-align: baseline;
+}
+
+.block-children-left-border {
+  top: -8px;
+}
+
+/* Variables */
+.injected-ui-item-toolbar a {
+  color: darkgray;
+  margin: 0 !important;
 }
