@@ -531,6 +531,7 @@ a.DOING,
   margin-right: 0.4em;
   transform: scale(0.8);
   color: green;
+  border-color: green;
 }
 
 .task-status.waiting {
@@ -680,8 +681,7 @@ light-coral */
   .journal-item
   .custom-query
   .blocks-container
-  > div:nth-child(odd)
-  .ls-block {
+  > div:nth-child(odd) {
   background: aliceblue;
 }
 
@@ -689,17 +689,11 @@ light-coral */
   .journal-item
   .custom-query
   .blocks-container
-  > div:nth-child(even)
-  .ls-block {
+  > div:nth-child(even) {
   background: cornsilk;
 }
 
-.dark-theme
-  .journal-item
-  .custom-query
-  .blocks-container
-  > div:nth-child(odd)
-  .ls-block {
+.dark-theme .journal-item .custom-query .blocks-container > div:nth-child(odd) {
   background: #295276;
 }
 
@@ -707,8 +701,7 @@ light-coral */
   .journal-item
   .custom-query
   .blocks-container
-  > div:nth-child(even)
-  .ls-block {
+  > div:nth-child(even) {
   background: #10452f;
 }
 
