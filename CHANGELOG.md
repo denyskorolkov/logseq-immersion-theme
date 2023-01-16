@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/denyskorolkov/logseq-immersion-theme/compare/v1.3.0...v1.3.1) (2023-01-16)
+
+
+### Bug Fixes
+
+* **css:** Correct appear on mobile ([40c9737](https://github.com/denyskorolkov/logseq-immersion-theme/commit/40c9737b14cf0e480cbcab69d370a7ddcb0a97a3))
+
 # [1.3.0](https://github.com/denyskorolkov/logseq-immersion-theme/compare/v1.2.2...v1.3.0) (2023-01-16)
 
 
