@@ -301,70 +301,71 @@ html[data-theme='dark'] {
 
 /* Countries */
 
-.inline [data-ref='uk'],
-.inline [data-ref='ua'],
-.inline [data-ref='by'],
-.inline [data-ref='ru'],
-.inline [data-ref='en'],
-.inline [data-ref='us'],
-.inline [data-ref='ca'],
-.inline [data-ref='es'],
-.inline [data-ref='fr'],
-.inline [data-ref='it'],
-.inline [data-ref='de'],
-.inline [data-ref='cn'],
-.inline [data-ref='in'],
-.inline [data-ref='ja'] {
+.inline [data-ref='language/uk'],
+.inline [data-ref='language/ua'],
+.inline [data-ref='language/by'],
+.inline [data-ref='language/ru'],
+.inline [data-ref='language/en'],
+.inline [data-ref='language/us'],
+.inline [data-ref='language/ca'],
+.inline [data-ref='language/es'],
+.inline [data-ref='language/fr'],
+.inline [data-ref='language/it'],
+.inline [data-ref='language/de'],
+.inline [data-ref='language/cn'],
+.inline [data-ref='language/in'],
+.inline [data-ref='language/ja'] {
   width: 1.5em;
   height: 1em;
   line-height: 1.5em;
   background-color: var(--ls-primary-background-color, white);
   overflow: hidden;
   visibility: hidden;
+  display: inline-block;
 }
 
-.inline [data-ref='en']::after {
+.inline [data-ref='language/en']::after {
   content: '🇬🇧';
 }
 
-.inline [data-ref='ua']::after {
+.inline [data-ref='language/ua']::after {
   content: '🇺🇦';
 }
-.inline [data-ref='by']::after {
+.inline [data-ref='language/by']::after {
   content: '🇧🇾';
 }
-.inline [data-ref='ru']::after {
+.inline [data-ref='language/ru']::after {
   content: '🇷🇺';
 }
 
-.inline [data-ref='uk']::after {
+.inline [data-ref='language/uk']::after {
   content: '🇬🇧';
 }
-.inline [data-ref='us']::after {
+.inline [data-ref='language/us']::after {
   content: '🇺🇸';
 }
-.inline [data-ref='ca']::after {
+.inline [data-ref='language/ca']::after {
   content: '🇨🇦';
 }
-.inline [data-ref='es']::after {
+.inline [data-ref='language/es']::after {
   content: '🇪🇸';
 }
-.inline [data-ref='fr']::after {
+.inline [data-ref='language/fr']::after {
   content: '🇫🇷';
 }
-.inline [data-ref='it']::after {
+.inline [data-ref='language/it']::after {
   content: '🇮🇹';
 }
-.inline [data-ref='de']::after {
+.inline [data-ref='language/de']::after {
   content: '🇩🇪';
 }
-.inline [data-ref='cn']::after {
+.inline [data-ref='language/cn']::after {
   content: '🇨🇳';
 }
-.inline [data-ref='in']::after {
+.inline [data-ref='language/in']::after {
   content: '🇮🇳';
 }
-.inline [data-ref='ja']::after {
+.inline [data-ref='language/ja']::after {
   content: '🇯🇵';
 }
 
@@ -677,33 +678,74 @@ light-coral */
   margin-bottom: 4px;
 }
 
+/* Journal queries */
+@media (max-width: 1024px) {
+  .light-theme
+    .journal-item
+    .custom-query
+    .blocks-container
+    > div:nth-child(odd) {
+    background: aliceblue;
+  }
+
+  .light-theme
+    .journal-item
+    .custom-query
+    .blocks-container
+    > div:nth-child(even) {
+    background: cornsilk;
+  }
+
+  .dark-theme
+    .journal-item
+    .custom-query
+    .blocks-container
+    > div:nth-child(odd) {
+    background: #295276;
+  }
+
+  .dark-theme
+    .journal-item
+    .custom-query
+    .blocks-container
+    > div:nth-child(even) {
+    background: #10452f;
+  }
+}
+
 .light-theme
   .journal-item
   .custom-query
-  .blocks-container
-  > div:nth-child(odd) {
+  .lazy-visibility:nth-child(odd)
+  .ls-block {
   background: aliceblue;
 }
 
 .light-theme
   .journal-item
   .custom-query
-  .blocks-container
-  > div:nth-child(even) {
+  .lazy-visibility:nth-child(even)
+  .ls-block {
   background: cornsilk;
 }
 
-.dark-theme .journal-item .custom-query .blocks-container > div:nth-child(odd) {
+.dark-theme
+  .journal-item
+  .custom-query
+  .lazy-visibility:nth-child(odd)
+  .ls-block {
   background: #295276;
 }
 
 .dark-theme
   .journal-item
   .custom-query
-  .blocks-container
-  > div:nth-child(even) {
+  .lazy-visibility:nth-child(even)
+  .ls-block {
   background: #10452f;
 }
+
+/* End Journal queries */
 
 .journal-item .custom-query .breadcrumb {
   opacity: 0.4;
@@ -723,8 +765,6 @@ light-coral */
   top: -8px;
 }
 
-/* Variables */
-.injected-ui-item-toolbar a {
-  color: darkgray;
-  margin: 0 !important;
+.macro {
+  display: inline-flex;
 }
